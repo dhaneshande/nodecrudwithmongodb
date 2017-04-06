@@ -10,7 +10,7 @@ var mongoose = require('mongoose');
 //Importing employee.js file residing in models
 Employee = require('./Employee.model');
 
-var PORT = (process.env.VCAP_APP_PORT || 8080);
+var PORT = (process.env.VCAP_APP_PORT || 8082);
 
 var host=(process.env.VCAP_APP_HOST || 'localhost');
 
@@ -118,6 +118,6 @@ Employee.removeEmployee(_id, function(err, employee){
 });
 
 //listens on port 8080
-app.listen(8080,function () {
-  console.log('Example app listening on port 8080!');
+app.listen(8082,function () {
+  console.log('Example app listening on port 8082!');
 });
