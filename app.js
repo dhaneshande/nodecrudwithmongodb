@@ -119,5 +119,5 @@ Employee.removeEmployee(_id, function(err, employee){
 
 //listens on port 8080
 app.listen(8082,function () {
-  console.log('Example app is listening on port 8082!');
+  console.log('Example app is listening on the port 8082!');
 });
