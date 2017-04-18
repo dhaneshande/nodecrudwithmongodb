@@ -87,7 +87,7 @@ app.put('/employees/:eid', function(req, res) {
     Employee.updateEmployee(_id, employee, {}, function(err, student) {
         if (employee) {
           response = {
-                "result": "Employee Details have been updated!"
+                "result": "Employee Details have been updated successfully!"
             }
             res.json(response);
         } else {
@@ -117,7 +117,7 @@ Employee.removeEmployee(_id, function(err, employee){
 });
 });
 
-//listens on port 8080
+//listens on port 8082
 app.listen(8082,function () {
   console.log('Example app is listening on the port 8082!');
 });
